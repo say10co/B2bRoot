@@ -28,5 +28,5 @@ echo 'Connections TCP : ' $(netstat -n | grep 'ESTABLISHED' | wc -l) >> result
 echo 'User log : ' $(users | cut -d ' ' -f1- | tr ' ' '\n' | uniq -c | wc -l) >> result
 
 #echo 'nbcalls : ' $(cat log.txt | wc -l ) >> result
-#cat result | wall
 cat result | wall 
+#cat result | wall 
